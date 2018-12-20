@@ -8,34 +8,40 @@ public class App
 {
     public static void main( String[] args )
     {
+        new Car();
 
-        Car car = new Car();
-        car.name = "Dacia";
-        car.color = "white";
-        car.doorCount = 4;
-        car.mileage = 7.5;
-        car.running = true;
-
-
-       Engine engine = new Engine();
-       engine.manufacturer = "Renault";
-       engine.capacity = 1500;
-
-       car.engine = engine;
+        Car firstCar = new Car();
+        firstCar.name = "Dacia";
+        firstCar.doorCount = 4;
+        firstCar.color = "black";
+        firstCar.running = true;
+        firstCar.mileage = 7.5;
 
 
-        car.engine.manufacturer = "BMW";
+        new Engine();
 
-        engine = null;
+       Engine firstEngine = new Engine();
+       firstEngine.manufacturer = "Renault";
+       firstEngine.capacity = 1500;
+
+       firstCar.engine = firstEngine;
+
+
+       Car secondCar= new Car();
+       secondCar.name = "BMW";
+       secondCar.doorCount = 4;
+       secondCar.color = "red";
+       secondCar.running = true;
+       secondCar.mileage = 9.5;
+
+       Engine secondEngine = new Engine;
+       secondEngine.manufacturer = "BMW";
+       secondEngine.capacity = 4000;
+
+       secondCar.engine = secondCar;
 
 
 
-
-
-
-
-        Car car2= new Car();
-        car2.name = "BMW";
 
 
 
