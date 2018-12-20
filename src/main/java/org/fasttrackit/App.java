@@ -1,5 +1,8 @@
 package org.fasttrackit;
 
+
+import java.time.LocalDateTime;
+
 /**
  * Hello world!
  *
@@ -8,7 +11,7 @@ public class App
 {
     public static void main( String[] args )
     {
-        new Car();
+
 
         Car firstCar = new Car();
         firstCar.name = "Dacia";
@@ -18,13 +21,23 @@ public class App
         firstCar.mileage = 7.5;
 
 
-        new Engine();
+        double firstCarTraveledDistance = firstCar.accelerate(130, 2);
+
+
+
+
+
+
 
        Engine firstEngine = new Engine();
        firstEngine.manufacturer = "Renault";
        firstEngine.capacity = 1500;
 
        firstCar.engine = firstEngine;
+       firstEngine.expiryDate = LocalDateTime.now();
+
+
+
 
 
        Car secondCar= new Car();
@@ -34,11 +47,15 @@ public class App
        secondCar.running = true;
        secondCar.mileage = 9.5;
 
-       Engine secondEngine = new Engine;
+
+       Engine secondEngine = new Engine();
        secondEngine.manufacturer = "BMW";
        secondEngine.capacity = 4000;
 
-       secondCar.engine = secondCar;
+       secondCar.engine = secondEngine;
+
+
+
 
 
 
