@@ -18,11 +18,13 @@ public class App
 
 
         Car firstCar = new Car(firstEngine);
-        firstCar.name = "Dacia";
+        firstCar.setName("Dacia");
         firstCar.doorCount = 4;
-        firstCar.color = "black";
+        firstCar.setColor("black");
         firstCar.running = true;
-        firstCar.mileage = 7.5;
+        firstCar.setMileage(7.5);
+
+        System.out.println(firstCar.getName());
 
         firstCar.engine = firstEngine;
         firstEngine.expiryDate = LocalDateTime.now();
@@ -41,11 +43,12 @@ public class App
 
 
        Car secondCar= new Car(secondEngine);
-       secondCar.name = "BMW";
+       secondCar.setName("BMW");
        secondCar.doorCount = 4;
-       secondCar.color = "red";
+       secondCar.setColor("red");
        secondCar.running = true;
-       secondCar.mileage = 9.5;
+       secondCar.setMileage(9.5);
+
 
        secondCar.engine = secondEngine;
 
