@@ -78,12 +78,12 @@ public class App
 
         new UFO().accelerate(100,2);
 
-//   Polymorphism (an object cad take multiple forms)
+//   Polymorphism (an object can take multiple forms)
 
         Vehicle ufo = new UFO();
         ufo.accelerate(200,2);
 
-//   The type of the variable determines what methods cand invoked
+//   The type of the variable determines what methods can be invoked
 //   We might need type casting (see below)
 
 

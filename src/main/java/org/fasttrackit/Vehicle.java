@@ -27,6 +27,15 @@ public class Vehicle {
 
     }
 
+    protected Vehicle clone()  {
+
+        Vehicle vehicle = new Vehicle();
+//   copy properties from current object
+        return vehicle;
+
+
+    }
+
 
 
      
