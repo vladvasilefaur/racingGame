@@ -16,4 +16,8 @@ public class Car extends AutoVehicle {
                 "doorCount=" + doorCount +
                 "} " + super.toString();
     }
+
+    public Car() {
+        super();
+    }
 }
