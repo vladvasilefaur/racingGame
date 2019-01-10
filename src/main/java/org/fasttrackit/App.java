@@ -59,12 +59,15 @@ public class App
 
         Vehicle vehicle2 = new Vehicle();
         vehicle2.vehicleCount = 2;
-
         Vehicle.vehicleCount = 3;
 
         System.out.println("Value from vehicle 1: " + vehicle1.vehicleCount);
         System.out.println("Value from vehicle 2: " + vehicle2.vehicleCount);
         System.out.println("Value from Vehicle class: " + Vehicle.vehicleCount);
+
+        new AutoVehicle();
+
+        new  AutoVehicle(new Engine());
 
 
 

@@ -27,6 +27,8 @@ public class Vehicle {
 
     }
 
+    public double accelerate(double speed)
+     
 
     public String getName() {
         return name;
