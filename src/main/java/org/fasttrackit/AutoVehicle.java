@@ -19,4 +19,12 @@ public class AutoVehicle extends Vehicle {
 
 
     }
+
+    @Override
+    public String toString() {
+        return "AutoVehicle{" +
+                "engine=" + engine +
+                ", running=" + running +
+                "} " + super.toString();
+    }
 }

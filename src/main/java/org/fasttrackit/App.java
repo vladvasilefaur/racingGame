@@ -1,7 +1,7 @@
 package org.fasttrackit;
 
 
-import java.time.LocalDateTime;
+import org.fasttrackit.cheater.UFO;
 
 /**
  * Hello world!
@@ -12,17 +12,21 @@ public class App
     public static void main( String[] args )
     {
 
-//        Engine firstEngine = new Engine();
-//        firstEngine.manufacturer = "Renault";
-//        firstEngine.capacity = 1500;
-//
-//
-//        Car firstCar = new Car(firstEngine);
-//        firstCar.setName("Dacia");
-//        firstCar.doorCount = 4;
-//        firstCar.setColor("black");
-//        firstCar.running = true;
-//        firstCar.setMileage(7.5);
+        Engine firstEngine = new Engine();
+        firstEngine.manufacturer = "Renault";
+        firstEngine.capacity = 1500;
+
+
+        Car firstCar = new Car(firstEngine);
+        firstCar.setName("Dacia");
+        firstCar.doorCount = 4;
+        firstCar.setColor("black");
+        firstCar.running = true;
+        firstCar.setMileage(7.5);
+
+        System.out.println(firstCar.toString());
+
+
 //
 //        System.out.println(firstCar.getName());
 //
@@ -68,6 +72,11 @@ public class App
         new AutoVehicle();
 
         new  AutoVehicle(new Engine());
+
+        vehicle1.accelerate(34, 12);
+
+
+        new UFO().accelerate(100,2);
 
 
 

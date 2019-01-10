@@ -9,4 +9,11 @@ public class Car extends AutoVehicle {
     public Car(Engine engine) {
         super(engine);
     }
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "doorCount=" + doorCount +
+                "} " + super.toString();
+    }
 }
